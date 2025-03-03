@@ -3,7 +3,24 @@ import java.lang.*;
 import java.io.*;
 
 class BinarySearch
-{   int firstandlast(int []a){
+{   
+    int timesSortedRotated(int [] a){
+        
+          int s = 0;
+        int end = a.length - 1;
+        int mid = 0;
+        while(s<end){ // imp 
+            mid = s + (end-s)/2;
+            if (a[mid] <= a[end]) {
+                end = mid;
+            } else {
+                s = mid + 1;
+            }
+        }
+
+        return s;// index of min 
+    }
+    int firstandlast(int []a){
     int res = -1;
             int t = 3;
 
@@ -46,9 +63,11 @@ class BinarySearch
 	{BinarySearch ob = new BinarySearch();
 		// your code goes here
 	int a[] = {1, 2,3,3, 4,6,8};
+		int b[] = {4, 5,1,2, 3};
+
 	System.out.println(ob.bin(a));
 		System.out.println(ob.firstandlast(a));
-	
+		System.out.println(ob.timesSortedRotated(b));
 
 
 	}
