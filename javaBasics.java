@@ -11,3 +11,4 @@ class Sortbyroll implements Comparator<Student> {
     }
 }
     Arrays.sort(x, new Sortbyroll());
+int foo = Integer.parseInt(myString);
