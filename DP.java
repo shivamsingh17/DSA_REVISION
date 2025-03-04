@@ -1,6 +1,8 @@
 import java.util.Arrays;
 
 class DP {
+    // Maximal Square (DP) 
+    
     static int countPaths(int M, int N) {  // bottom left to bottom right
         int[][] dp = new int[M][N];
 
