@@ -13,7 +13,7 @@
  *     }
  * }
  */
-
+https://leetcode.com/discuss/post/6586727/n-ary-tree-java-cheat-sheet-with-example-m313/
 class tree {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         Queue<TreeNode> st = new LinkedList<>();
